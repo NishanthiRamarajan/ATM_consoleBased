@@ -106,7 +106,7 @@ public class ATM {
 
     static void displayTransactionHistory() {
         String history = currentUser.getTransactionHistory();
-        if (!history.isEmpty()) {
+        if (history.isEmpty()) {
             System.out.println("No transactions performed yet. History is empty.");
         } else {
             System.out.println(history);
